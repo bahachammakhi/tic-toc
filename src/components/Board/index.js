@@ -10,7 +10,7 @@ import {
   winningLines,
   createLine,
 } from "../../utils/utils";
-const socket = Client(`http://localhost:${process.env.PORT}`);
+const socket = Client(`https://tic-toc-baha.herokuapp.com/`);
 
 const Board = () => {
   const [squares, setSquares] = useState(initialState);
