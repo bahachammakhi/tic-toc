@@ -10,7 +10,7 @@ import {
   winningLines,
   createLine,
 } from "../../utils/utils";
-const socket = Client("http://localhost:5000");
+const socket = Client(`http://localhost:${process.env.PORT}`);
 
 const Board = () => {
   const [squares, setSquares] = useState(initialState);
